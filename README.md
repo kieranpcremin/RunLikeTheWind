@@ -1,3 +1,26 @@
+# Run Like The Wind Demo
+
+The RunLikeTheWind is probably the worlds worst running coach :). It mainly advises you to go for PBs (Personal bests) by running in the same direction as the wind if the weather is windy :) . If the weather is calm it recommends a tempo run. If the weather is above 25 degrees celcius, you are wisely advised to stay hydrated and go for a very easy run. 
+
+The code has been layered and structured so that RunLikeTheWind may grow as it recieves feedback from its millions of users and more data to analyse in order to make good workout suggestions. E.g a users last x number of strava activities, a users latest health readings from their wearables, resting, variable heart rate etc...
+
+
+
+
+# Tech Stack
+The RunLikeTheWind Demo Web application is an Angular and ASP.NET Core solution. 
+
+When the Angular web application loads, it communicates with an ASP.NET Core Web API to get a list of cities and binds them to a dropdown control.  When the user selects a city, the web api is called and gets the weather forecast data for the selected city.
+
+The Workoutplanner in the domain model uses this weather data to determine a suitable run workout for the user. 
+
+
+
+Web APP Url:            https://localhost:4200
+
+Web API Documentation:  https://localhost:7051/swagger
+
+
 ## Prerequisites
 
 Visual Studio 2022 Preview 2 or later with the ASP.NET and web development workload installed.
@@ -5,24 +28,6 @@ Visual Studio 2022 Preview 2 or later with the ASP.NET and web development workl
 npm (https://www.npmjs.com/), which is included with Node.js
 
 Angular CLI (https://angular.io/cli) This can be the version of your choice
-
-# Run Like The Wind Demo
-
-The RunLikeTheWind Demo Web application is an Angular and ASP.NET Core solution. 
-
-
-Web APP Url:            https://localhost:4200
-
-Web API Documentation:  https://localhost:7051/swagger
-
-https://user-images.githubusercontent.com/74774103/194725824-c05d7610-34c6-42f8-aae2-856cc48715b9.mp4
-
-
-
-![startup-projects](https://user-images.githubusercontent.com/74774103/194725702-022baf1b-a705-4e8f-b9df-3313bfad4ce7.png)
-
-
-
 
 
 
