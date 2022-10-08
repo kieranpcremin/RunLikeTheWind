@@ -2,7 +2,7 @@
 
 The RunLikeTheWind is probably the worlds worst running coach :). It mainly advises you to go for PBs (Personal bests) by running in the same direction as the wind if the weather is windy :) . If the weather is calm it recommends a tempo run. If the weather is above 25 degrees celcius, you are wisely advised to stay hydrated and go for a very easy run. 
 
-The code has been layered and structured so that RunLikeTheWind may grow as it recieves feedback from its millions of users and more data to analyse in order to make good workout suggestions. E.g a users last x number of strava activities, a users latest health readings from their wearables, resting, variable heart rate etc...
+The code has been layered and structured so that RunLikeTheWind may grow as it recieves feedback and suggestions from its millions of users and more data to analyse in order to make good workout suggestions. E.g a users last x number of strava activities, a users latest health readings from their wearables, resting, variable heart rate etc...
 
 
 
