@@ -1,0 +1,71 @@
+<br />
+<p-dropdown [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" (onChange)="onChange($event)" placeholder="Select a City">
+  <ng-template pTemplate="selectedItem">
+    <div class="city-item city-item-value" *ngIf="selectedCity">
+      <img src="assets/showcase/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + selectedCity.countryCode.toLowerCase()" />
+      {{selectedCity.name}}
+    </div>
+  </ng-template>
+  <ng-template let-city pTemplate="item">
+    <div class="city-item">
+      <img src="assets/showcase/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + city.countryCode.toLowerCase()" />
+      {{city.name}}
+    </div>
+  </ng-template>
+</p-dropdown>
+
+<br/> 
+<p-progressSpinner *ngIf="!locationLoaded"></p-progressSpinner>
+
+
+<p-panel header="" *ngIf="countryName!=''">
+
+
+  <p-card header="" subheader="Workout suggestion based on weather" [style]="{width: '560px'}" styleClass="p-card-shadow">
+
+
+    <table *ngIf="locationLoaded">
+      <tr>
+        <td>Country:</td>
+        <td>{{workOutSuggestionViewModel.Country}}</td>
+      </tr>
+      <tr>
+        <td>Timezone:</td>
+        <td>{{workOutSuggestionViewModel.Timezone}}</td>
+      </tr>
+      <tr>
+        <td>Localtime:&emsp;</td>
+        <td>{{workOutSuggestionViewModel.LocalTime}}</td>
+      </tr>
+    </table>
+    <br />
+    <table *ngIf="locationLoaded">
+      <tr>
+        <td><img src="https://{{workOutSuggestionViewModel.WeatherIcon}}"></td>
+        <td></td>
+      </tr>
+      <tr> 
+        <td>Temperature:&emsp;</td>
+        <td>{{workOutSuggestionViewModel.TemperatureCelcius}} &#8451;</td>
+      </tr>
+      <tr>
+        <td>Wind Direction:</td>
+        <td>{{workOutSuggestionViewModel.WindDirection}}</td>
+      </tr>
+      <tr>
+        <td>Wind Speed:</td>
+        <td>{{workOutSuggestionViewModel.WindSpeedKph}} Kph</td>
+      </tr>
+    </table>
+    <p-message severity="success" text="{{workOutSuggestionViewModel.WorkoutSuggestion}}" styleClass="mr-2"></p-message>
+  </p-card>
+
+  <br />
+
+  <p-panel header="Route Planner" [toggleable]="true" [collapsed]="true">
+    <p-gmap [options]="mapoptions" [style]="{'width':'100%','height':'320px'}"></p-gmap>
+  </p-panel>
+
+</p-panel>
+
+

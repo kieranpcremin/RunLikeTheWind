@@ -1,0 +1,2 @@
+D:\Circit\RunLikeTheWind\obj\Debug\RunLikeTheWind.esproj.SuggestedBindingRedirects.cache
+D:\Circit\RunLikeTheWind\obj\Debug\RunLikeTheWind.esproj.CoreCompileInputs.cache
