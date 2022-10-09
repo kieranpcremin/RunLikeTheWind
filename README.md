@@ -14,11 +14,14 @@ resting, variable heart rate, future race/distance goals etc...
 
 ## Video of RunLikeTheWind Web App
 
+https://user-images.githubusercontent.com/74774103/194743074-e57c33fd-87f2-4de7-b878-5dfcab88bf1a.mp4
+
 
 # Tech Stack
 * ASP.NET Core Web Open API (.NET 6)
 * Swagger API Documentation 
 * Angular
+* PrimeNg
 * Nunit (Unit tests)
 
   
@@ -49,6 +52,8 @@ Cities:			Cities Config Section of appsettings.json. (Note, when adding a city, 
 If the application fails to run:
 
 * Right click on solution explorer/properties. Ensure the two projects highlighted below in multiple startup projects are set to "Start"
+
+![startup-projects](https://user-images.githubusercontent.com/74774103/194743104-4ff25ffc-8614-4c42-988b-76cfc2c3f85a.png)
 
 
 * Use swagger endpoint to ensure the Web API is responding at https://localhost:7051/swagger
